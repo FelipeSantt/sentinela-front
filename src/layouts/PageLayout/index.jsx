@@ -1,9 +1,9 @@
 import React from "react";
 import Header from "../../components/Header";
 import { MenuNav } from "../../components/Menu/MenuNav";
-import MenuBarItem from "../../components/Menu/MenuItem";
 import Footer from "../../components/Footer";
-import Segurado from "../../pages/Segurado";
+import { Outlet } from "react-router-dom";
+import MenuItem from "../../components/Menu/MenuItem";
 
 const PageLayout = () => {
   return (
@@ -11,9 +11,9 @@ const PageLayout = () => {
       <Header />
       <div className="relative z-10 flex p-0">
         <MenuNav>
-            <MenuBarItem />
-        </MenuNav> 
-        <Segurado/> 
+            <MenuItem />
+        </MenuNav>
+        <Outlet/>
       </div>
       <Footer/>
     </div>

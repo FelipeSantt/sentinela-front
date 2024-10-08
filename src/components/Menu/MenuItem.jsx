@@ -10,8 +10,10 @@ import {
     LayoutDashboard,
     Settings,
     Sidebar,
+    Link,
 } from "lucide-react"
 import { MenuNavItem } from './MenuNav'
+import Segurado from '../../pages/Segurado'
 
 const MenuItem = () => {
   return (
@@ -21,8 +23,15 @@ const MenuItem = () => {
             text="Dashboard"
             alert
         />
-        <MenuNavItem icon={<BarChart3 size={20} />} text="Estatisticas" />
-        <MenuNavItem icon={<UserCircle size={20} />} text="Segurados" active />
+        <MenuNavItem 
+            icon={<BarChart3 size={20} />} 
+            text="Estatisticas" />
+          
+        <MenuNavItem 
+            icon={<UserCircle size={20} />} 
+            text="Segurados" active 
+            />
+            
         <MenuNavItem icon={<Boxes size={20} />} text="Invetario" />
         <MenuNavItem icon={<Package size={20} />} text="Pacotes" />
         <MenuNavItem icon={<Receipt size={20} />} text="Finaceiro" />

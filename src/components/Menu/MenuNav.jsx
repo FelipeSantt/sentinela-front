@@ -45,7 +45,7 @@ export function MenuNav( {children}) {
     )
   }
   
-  export function MenuNavItem( {icon, text, active, alert }){
+  export function MenuNavItem( {icon, text, active, alert, onClick }){
     const {expand} = useContext(MenuNavContext)
     return(
       <li className={`
@@ -69,6 +69,7 @@ export function MenuNav( {children}) {
         {alert && (
           <div className={`absolute right-2 w-2 h-2 rounded bg-indigo-400 ${expand ? "":"top-2"}`} />
         )}
+        {onClick}
       </li>
     )
   }
