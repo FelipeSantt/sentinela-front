@@ -1,11 +1,11 @@
-import Paths from "./routes"
+import  Paths  from "./routes"
 
 function App() {
 
   return (
-    <div>
+    <>
       <Paths/>
-    </div>
+    </>
   )
 }
 
