@@ -1,12 +1,9 @@
-
-import MenuItem from '../../components/Menu/MenuItem'
-import { MenuNav } from '../../components/Menu/MenuNav'
+import React from 'react'
 
 const Home = () => {
   return (
-    <div>
-      <MenuItem />
-      <MenuNav/>
+    <div className=''>
+      
     </div>
   )
 }

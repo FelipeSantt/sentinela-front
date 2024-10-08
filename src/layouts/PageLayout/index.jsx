@@ -9,7 +9,7 @@ const PageLayout = () => {
   return (
     <div className="relative flex flex-col h-full overflow-y-auto antialiased">
       <Header />
-      <div className="relative z-10 flex p-0 container mx-auto">
+      <div className="relative z-10 flex p-0">
         <MenuNav>
             <MenuBarItem />
         </MenuNav> 

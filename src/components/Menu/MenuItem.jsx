@@ -26,7 +26,6 @@ const MenuItem = () => {
         <MenuNavItem icon={<Boxes size={20} />} text="Invetario" />
         <MenuNavItem icon={<Package size={20} />} text="Pacotes" />
         <MenuNavItem icon={<Receipt size={20} />} text="Finaceiro" />
-        <hr className='my-3'/>
         <MenuNavItem icon={<Settings size={20} />} text="Configurações"/>
         <MenuNavItem icon={<LifeBuoy size={20} />} text="Ajuda"/>
     </section>
