@@ -6,7 +6,7 @@ const FormSegurado = () => {
   
 
   return (
-    <section className='w-3/4 h-full justify-center flex mt-14'>
+    <section className='w-3/4 h-full justify-center flex mt-14 container'>
       <div className='sm:w-2/4 w-2/4 h-3/4 items-center flex flex-col rounded-md border box-border p-5'>
         <h1 className='text-2xl font-semibold mt-4'>Dados Segurado</h1>
         <form className='w-full md:2/4 flex flex-col px-4 mt-4 gap-1'>
@@ -19,16 +19,18 @@ const FormSegurado = () => {
           <hr className='bg-slate-300 mt-4'/>
           <label htmlFor="">Endereço</label>
           <input type="text" placeholder='Endereço'/>
-          <div className='w-full xl:flex lg:flex  gap-5'>
-            <div className= 'w-full flex flex-col'>
-              <label htmlFor="">Complemento</label>
-              <input type="text" placeholder='Complemento'/>
+          <div className='w-1/4 xl:flex lg:flex px-2'>
+            <div className='w-2/4 flex col-span-2 gap-5'>
+              <div className= 'w-full flex flex-col'>
+                <label htmlFor="">Complemento</label>
+                <input type="text" placeholder='Complemento'/>
+              </div>
+              <div className='w-full flex flex-col'>
+                <label htmlFor="">Numero</label>
+                <input type="number" placeholder='Numero'/>
+              </div>
             </div>
-            <div className='w-full flex flex-col'>
-              <label htmlFor="">Numero</label>
-              <input type="number" placeholder='Numero'/>
             </div>
-          </div>
         </form>
         <div className='flex w-full justify-end p-4'>
           <button type='submit' className='w-28 h-8 rounded-md mt-2 bg-slate-500 hover:bg-slate-400'>Salvar</button>
