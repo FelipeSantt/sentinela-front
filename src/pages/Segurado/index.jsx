@@ -1,5 +1,5 @@
 import React from 'react'
-import FormSegurado from '../../components/Form/formSegurado'
+import FormSegurado from '../../components/Form/FormSegurado'
 
 const Segurado = () => {
   return (
