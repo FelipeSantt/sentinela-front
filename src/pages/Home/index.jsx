@@ -1,10 +1,10 @@
-import React from 'react'
+
 import MenuItem from '../../components/Menu/MenuItem'
 import { MenuNav } from '../../components/Menu/MenuNav'
 
 const Home = () => {
   return (
-    <div className=''>
+    <div>
       <MenuItem />
       <MenuNav/>
     </div>
